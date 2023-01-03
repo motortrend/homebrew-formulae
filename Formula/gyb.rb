@@ -4,19 +4,17 @@
 # :nodoc:
 class Gyb < Formula
   desc "\"Generate Your Boilerplate\""
-  homepage "https://nshipster.com/swift-gyb/"
-  url "https://raw.githubusercontent.com/apple/swift/17e5594bec7cebe980857e4fe3e05837708f9f62/utils/gyb"
-  version "2019-01-18"
-  sha256 "0a97b3ac257fa29d6240d1878590facd1d80053491cc14601f7e68bb182a29b1"
+  homepage "https://motortrendondemand.com/"
+  url "https://raw.githubusercontent.com/motortrend/homebrew-formulae/main/gyb/gyb?token=GHSAT0AAAAAAB5AYHPL5S4E7G2SHANSIUTKY5UYQBA"
+  version "2023-01-03"
 
-  depends_on xcode: ["10.0", :build]
+  depends_on xcode: ["11.0", :build]
 
   resource "gyb.py" do
-    url "https://raw.githubusercontent.com/apple/swift/dab60f04ca98c573378a5e78ed85d5a27a7ca2e0/utils/gyb.py"
-    sha256 "4693b65a8ea54173e20f2565a105af62d57d0e6f66540ea096e7caee737630f7"
-    version "2019-01-18"
+    url "https://raw.githubusercontent.com/motortrend/homebrew-formulae/main/gyb/gyb.py?token=GHSAT0AAAAAAB5AYHPKJKFVUINMGWFVE7GWY5UYSHA"
+    version "2023-01-03"
   end
-  depends_on "python@2" if MacOS.version <= :snow_leopard
+  depends_on "python@3" if MacOS.version <= :snow_leopard
 
   def install
     resource("gyb.py").stage { bin.install "gyb.py" }
