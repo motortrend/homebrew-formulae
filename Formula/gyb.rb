@@ -5,7 +5,7 @@
 class Gyb < Formula
   desc "\"Generate Your Boilerplate\""
   homepage "https://motortrendondemand.com/"
-  url "hhttps://raw.githubusercontent.com/motortrend/homebrew-formulae/main/gyb/gyb"
+  url "https://raw.githubusercontent.com/motortrend/homebrew-formulae/main/gyb/gyb"
   version "2023-01-03"
   sha256 "5965040b4c04528191d392d57282b1c5970fb8c3fedf1fb64bf6412173d6ac72"
   
